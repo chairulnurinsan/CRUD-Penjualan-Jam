@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjualan Jam Tangan</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Penjualan Jam Tangan</h1>
+        <button id="btnTambah" class="btn btn-primary mb-3">Tambah</button>
+        <div id="formDiv" class="mb-3" style="display: none;">
+            <form id="createForm">
+                <div class="from-group">
+                    <label for="id">ID</label>
+                    <input type="id" class="form-control" id="id" placeholder="Id" required>
+                </div>
+                <div class="form-group">
+                    <label for="nama">Nama</label>
+                    <input type="text" class="form-control" id="nama" placeholder="Nama" required>
+                </div>
+                <div class="form-group">
+                    <label for="merk">Merk</label>
+                    <input type="text" class="form-control" id="merk" placeholder="Merk" required>
+                </div>
+                <div class="form-group">
+                    <label for="satuan">Satuan</label>
+                    <input type="text" class="form-control" id="satuan" placeholder="Satuan" required>
+                </div>
+                <div class="form-group">
+                    <label for="jumlah">Jumlah</label>
+                    <input type="number" class="form-control" id="jumlah" placeholder="Jumlah" required>
+                </div>
+                <div class="form-group">
+                    <label for="harga">Harga</label>
+                    <input type="number" class="form-control" id="harga" placeholder="Harga" required>
+                </div>
+                <button type="submit" class="btn btn-success">Simpan</button>
+            </form>
+        </div>
+        <div id="jamTanganList"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
